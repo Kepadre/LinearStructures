@@ -61,3 +61,26 @@ public:
 	void ExchangeAt(int);
 	int Count(void);
 };
+
+class DoubleConnectionList
+{
+private:
+	struct Node
+	{
+		int data;
+		Node* next, * prev;
+	};
+	Node* root, * tail;
+
+public:
+	DoubleConnectionList(void);
+	~DoubleConnectionList(void);
+
+	void Add(int);
+	int RemoveAt(int);
+	int RemoveRoot(void);
+	void Print(void);
+	void PrintReverse(void);
+	void ExchangeAt(int);
+	int Count(void);
+};
