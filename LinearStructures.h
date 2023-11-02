@@ -39,3 +39,25 @@ public:
 	bool IsFull(void);
 	void Print(void);
 };
+
+class SingleConnectionList
+{
+private:
+	struct Node
+	{
+		int data;
+		Node* next;
+	};
+	Node* root, * tail;
+
+public:
+	SingleConnectionList(void);
+	~SingleConnectionList(void);
+
+	void Add(int);
+	int RemoveAt(int);
+	int RemoveRoot(void);
+	void Print(void);
+	void ExchangeAt(int);
+	int Count(void);
+};
